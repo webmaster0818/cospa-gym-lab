@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5FFF5;
+}
+
+/* Navbar scroll effect */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+/* Mobile menu */
+.mobile-menu.open {
+  transform: translateX(0);
+}
+.mobile-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Price badge animation */
+@keyframes priceShine {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+.price-shine {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  background-size: 200px 100%;
+  animation: priceShine 3s infinite;
+}
+
+/* Ranking number styles */
+.rank-1 { background: linear-gradient(135deg, #FFD700, #FFA000); }
+.rank-2 { background: linear-gradient(135deg, #C0C0C0, #9E9E9E); }
+.rank-3 { background: linear-gradient(135deg, #CD7F32, #8D5524); }
+.rank-default { background: linear-gradient(135deg, #2E7D32, #1B5E20); }
+
+/* Table styling */
+.comparison-table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* CTA button hover */
+.cta-button {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.3);
+}
+.cta-button:hover {
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Cost savings badge */
+.savings-badge {
+  background: linear-gradient(135deg, #FF8F00, #F57F17);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Scroll margin for anchors */
+[id] {
+  scroll-margin-top: 80px;
+}
