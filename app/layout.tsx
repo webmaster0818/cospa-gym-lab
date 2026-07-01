@@ -36,9 +36,6 @@ export const metadata: Metadata = {
   description: '【2026年最新】安い・コスパ重視のパーソナルジムを徹底比較。入会金+セッション+食事指導の総額で本当に安いジムがわかる。1回あたり単価ランキング、エリア別おすすめ、料金比較表を掲載。',
   keywords: ['パーソナルジム', '安い', 'コスパ', '比較', 'おすすめ', '料金', '2026'],
   authors: [{ name: 'コスパジムラボ編集部' }],
-  alternates: {
-    canonical: 'https://cospa-gym-lab.pages.dev/',
-  },
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
